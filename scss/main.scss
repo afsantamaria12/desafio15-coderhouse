@@ -1,0 +1,162 @@
+@import "variables.scss";
+@import "header.scss";
+@import "boton.scss";
+@import "footer.scss";
+ 
+//Perfil
+.iconos a img {
+	padding: 15px;
+}
+
+.items li {
+	text-align: justify;
+	margin: 30px;
+	color: #636466;
+	list-style-type: square;
+}
+
+.habilidades {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.habilidades ul li {
+	text-align: justify;
+	margin: 30px;
+	color: #636466;
+	list-style-type: square;
+}
+
+.porcentaje {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+}
+
+//Animaciones de Habilidades
+@keyframes itemA {
+  from {right: 0px; 
+  background-color: #ffffff;
+  width: 0px;}
+  to {right: 150px;
+  background-color: #34A49A;
+  width:300px;}
+}
+
+.itemA {
+  height: 15px;
+  background-color: #34A49A;
+  animation-name: itemA;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes itemB {
+  from {right: 0px; 
+  background-color: #ffffff;
+  width: 0px;}
+  to {right: 150px;
+  background-color: #34A49A;
+  width:400px;}
+}
+
+.itemB {
+  height: 15px;
+  background-color: #34A49A;
+  animation-name: itemB;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes itemC {
+  from {right: 0px; 
+  background-color: #ffffff;
+  width: 0px;}
+  to {right: 150px;
+  background-color: #34A49A;
+  width:150px;}
+}
+
+.itemC {
+  height: 15px;
+  background-color: #34A49A;
+  animation-name: itemC;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes itemD {
+  from {right: 0px; 
+  background-color: #ffffff;
+  width: 0px;}
+  to {right: 150px;
+  background-color: #34A49A;
+  width:250px;}
+}
+
+.itemD {
+  height: 15px;
+  background-color: #34A49A;
+  animation-name: itemD;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+//Texto General					  
+@mixin titulos {
+	font-family: $title-font;
+	letter-spacing: 2px;
+	text-align: center;
+	color: $color-cyan;
+  margin-top: 20px;
+margin-bottom: 25px;}
+
+h1 {@include titulos}
+
+
+@mixin subtitulos {
+	margin-top: 15px;
+	background-color: $color-purple;
+	color: #ffffff;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 3px}
+	
+h5 {@include subtitulos}
+
+@mixin blogTitulos {
+  font-family: $body-text;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: lighter;
+	text-align: left;
+	color: $color-cyan;
+	padding: 10px}
+
+h2 {@include blogTitulos}
+
+
+@mixin parrafos {
+	margin: 10px;
+	padding: 10px;
+	color: $color-gray;
+	text-align: justify;
+	line-height: 25px}
+
+.texto {@include parrafos}
+
+.fondoLista
+{
+  background-color: #EAEAEA}

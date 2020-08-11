@@ -1,0 +1,28 @@
+//Características generales
+body {
+	background-image: linear-gradient(#ffffff, #ffffff, #ffffff, #DCDCDD);	
+	font-family: $body-text
+}
+
+
+//Menú
+header nav {
+	background-image:linear-gradient(to right, #ffffff , #B2DCD6);
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #636466;
+	padding: 15px;
+
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #34A49A;
+}
